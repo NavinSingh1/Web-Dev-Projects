@@ -1,0 +1,309 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar: logo and images */
+#logo{
+    margin: 6px 21px;
+
+}
+
+#logo img{
+    height: 56px;
+    /* margin: 0px 0px; */
+    border-radius: 50px;
+}
+
+/* Navigation bar: List Styling */
+
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 551px;
+}
+
+#home::before{
+    content: "";
+    background: url('../Bcimages/new.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 696px;
+    width: 1349px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services container  */
+#services{
+    margin: 34px;   
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: lightgrey;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 79px;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    height: 674px;
+    width: 1349px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../Bcimages/img-1.png');
+    width: 100%;
+    height: 661px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.client-item{
+    padding: 48px;
+}
+
+#clients img{
+    width: 244px;
+    height: 194px;
+    border-radius: 17px;
+    margin: -24px;
+}
+
+#new-client img{
+    width: 201px;
+    height: 194px;
+    border-radius: 70px;
+    margin: -24px;
+}
+
+/* client-new-line */
+.client-new-line{
+    padding: 73px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    margin: 0px;
+}
+
+.services-container{
+     /* margin: 26px; */
+    margin: 59px;
+    /* background: url('../Bcimages/lily.jpg') no-repeat center center/cover; */
+}
+
+
+/* contact section */
+#contact{
+    position: relative;
+    padding: 0px 0px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../Bcimages/bc3.jpg') no-repeat center center/cover;
+}
+
+/* footer{
+    background-color: black;
+    color: white;
+    /* padding: 9px 20px;
+    margin: -5px 0px;
+} */ */
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* //form , contact us and footer/ */
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* background-color: black; */
+}
+
+.form-input {
+    width: 100%;
+    /* padding: 7px; */
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn-dark  {
+    color: black;
+    border: 2px solid grey;
+    padding: 4px 367px;
+    font-family: 'Bree Serif', serif;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 833px;
+    background: url('../Bcimages/bc3.jpg') no-repeat center center/cover;
+    /* opacity: 0.8;
+    z-index: 1; */
+}
